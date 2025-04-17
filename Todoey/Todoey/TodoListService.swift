@@ -17,7 +17,6 @@ enum TodoListService {
     static let session = URLSession.shared
     
     static func getTodos() async throws -> [Todo] {
-        // TODO: Implement. See above for request code
         let components = URLComponents(string: baseUrl)
         guard let url = components?.url else { fatalError("Invalid URL") }
         
